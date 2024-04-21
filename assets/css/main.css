@@ -285,6 +285,7 @@ section {
 .header .btn-book-a-table:focus {
   font-size: 14px;
   color: #fff;
+  font-weight: bold;
   background: var(--color-primary);
   padding: 8px 20px;
   margin-left: 30px;
@@ -295,6 +296,7 @@ section {
 .header .btn-book-a-table:hover,
 .header .btn-book-a-table:focus:hover {
   color: #fff;
+  font-weight: bold;
   background: #ec2727;
 }
 
@@ -723,6 +725,7 @@ section {
   background: rgba(255, 255, 255, 0.3);
   padding: 6px 30px 8px 30px;
   color: #fff;
+  font-weight: bold;
   border-radius: 50px;
   transition: all ease-in-out 0.4s;
 }
@@ -1335,7 +1338,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contact Section
+# submit Section
 --------------------------------------------------------------*/
 .contact .info-item {
   background: #f4f4f4;
@@ -1461,6 +1464,7 @@ section {
   border: 0;
   padding: 12px 40px;
   color: #fff;
+  font-weight: bold;
   transition: 0.4s;
   border-radius: 50px;
 }
@@ -1509,7 +1513,7 @@ section {
 }
 
 .hero .btn-book-a-table {
-  font-weight: 500;
+  font-weight: bold;
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
@@ -1523,6 +1527,7 @@ section {
 
 .hero .btn-book-a-table:hover {
   background: #ec2727;
+  font-weight: bold;
   box-shadow: 0 8px 28px #4f4f5a;
 }
 
@@ -1530,12 +1535,12 @@ section {
   font-size: 16px;
   transition: 0.5s;
   margin-left: 25px;
-  color: var(--font-secondary);
-  font-weight: 600;
+  color: white;
+  font-weight: bold;
 }
 
 .hero .btn-watch-video i {
-  color: var(--color-primary);
+  color: white;
   font-size: 32px;
   transition: 0.3s;
   line-height: 0;
@@ -1543,7 +1548,7 @@ section {
 }
 
 .hero .btn-watch-video:hover {
-  color: var(--color-primary);
+  color: #ffe2e2;
 }
 
 .hero .btn-watch-video:hover i {
@@ -1650,3 +1655,218 @@ section {
 .footer .credits a {
   color: #fff;
 }
+
+
+
+
+
+
+
+
+:root {
+  --font-default: 'Open Sans', sans-serif; 
+  --font-primary: 'Fredoka One', sans-serif; 
+  --font-secondary: 'Inter', sans-serif; 
+}
+
+:root {
+  --color-default: #212529;
+  --color-primary: #000066;
+  --color-secondary: #37373f;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: var(--font-default); 
+  color: var(--color-default);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ec2727;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary); 
+  font-weight: 800; 
+}
+
+/*--------------------------------------------------------------
+# Sections & Section Header
+--------------------------------------------------------------*/
+section {
+  overflow: hidden;
+  padding: 50px 0;
+  scroll-margin-top: 60px;
+  overflow: clip;
+}
+
+.section-bg {
+  background-color: #eee;
+}
+
+.section-header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #7f7f90;
+  text-transform: uppercase;
+  font-family: var(--font-default);
+}
+
+.section-header p {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: var(--font-primary);
+}
+
+.section-header p span {
+  color: var(--color-primary);
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 15px 0;
+  background: rgba(55, 55, 63, 0.05);
+  margin-top: 90px;
+}
+
+@media (max-width: 575px) {
+  .breadcrumbs {
+    margin-top: 70px;
+  }
+}
+
+.breadcrumbs h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #676775;
+  content: "/";
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+
+  .breadcrumbs h2 {
+    margin-bottom: 10px;
+  }
+
+  .breadcrumbs ol {
+    display: block;
+  }
+
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
+
+/*--------------------------------------------------------------
+# Scroll top button
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: var(--color-primary);
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background: #ec2727;
+  color: #fff;
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/*--------------------------------------------------------------
+# hero image
+--------------------------------------------------------------*/
+
+.hero {
+  position: relative;
+    background-image: url('../img/new-hero-img.jpg');
+    background-size: cover;
+    background-position: center;
+  
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust opacity as needed */
+  z-index: 0; /* Ensure the overlay is below other content */
+}
+
+.hero .container {
+  position: relative; /* Ensure that container stacks above the overlay */
+  z-index: 1; /* Ensure that container appears above the overlay */
+}
+
+
+

@@ -86,24 +86,26 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex align-items-center section-bg">
-    <div class="container">
-      <div class="row justify-content-between gy-5">
-        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-          <h2 data-aos="fade-up">Enjoy Healthy<br>Delicious Pancakes</h2>
-          <!-- <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p> -->
-          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#book-a-table" class="btn-book-a-table">Reserve Now</a>
-            <a href="https://www.youtube.com/watch?v=-AWHNuSlq2A&t=13s" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+  <!--<section id="hero" class="hero d-flex align-items-center section-bg">-->
+    
+    <section id="hero" class="hero d-flex align-items-center">
+      <div class="background-overlay"></div>
+      <div class="container">
+        <div class="row justify-content-between gy-5">
+          <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+            <h2 data-aos="fade-up" style="color: white;">Enjoy Healthy<br>Delicious Pancakes</h2>
+            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+              <a href="#book-a-table" class="btn btn-book-a-table">Reserve Now</a>
+              <a href="https://www.youtube.com/watch?v=-AWHNuSlq2A&t=13s" class="btn btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
-          <img src="assets/img/new-hero-img.jpg" class="img-fluid" alt="varieties of pancakes on a table" data-aos="zoom-out" data-aos-delay="300">
+          <!--<div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+            <img src="assets/img/new-hero-img.jpg" class="img-fluid" alt="varieties of pancakes on a table" data-aos="zoom-out" data-aos-delay="300">
+          </div>-->
         </div>
       </div>
-    </div>
-  </section><!-- End Hero Section -->
-
+    </section><!-- End Hero Section -->
+    
   <main id="main">
 
     <!-- ======= About Section ======= -->
@@ -153,16 +155,73 @@
           <!-- <h2>Discover the Story of Pancake Bliss</h2> -->
           <p>Story of Pancake Bliss</p>
         </div>
-        <div class="row">
+
+
+        <div class="accordion" id="accordionPanels">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="font-size: 32px; padding: 20px;">
+                📖 Story
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                Founded in 2010 by passionate food enthusiasts, Pancake Bliss began as a humble food truck serving delectable pancakes on the streets of downtown. With an unwavering commitment to quality ingredients and exceptional flavors, Pancake Bliss quickly gained a loyal following and expanded into a full-fledged restaurant, becoming a beloved culinary destination for locals and visitors alike.
+              </div>
+            </div>
+            
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="font-size: 32px; padding: 20px;">
+                💡 Our Vision
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                At Pancake Bliss, our vision is simple: to spread joy, one pancake at a time. We envision a world where every bite of our fluffy, indulgent pancakes brings a smile to our customers' faces. With a focus on creativity, innovation, and community, we strive to delight taste buds, foster connections, and create unforgettable dining experiences for pancake lovers of all ages.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="font-size: 32px; padding: 20px;">
+                🎯 Our Mission
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                To revolutionize the pancake experience in New York City, Pancake Bliss is committed to infusing creativity and culinary artistry into every stack. From our kitchen to your plate, we craft pancakes that redefine indulgence, elevating the traditional breakfast favorite to new heights. With a passion for excellence and a dedication to community, we strive to create unforgettable moments of joy and connection for pancake lovers across the city.
+              </div>
+            </div>
+          </div>
+          
+ 
+        </div>
+
+
+
+
+
+
+
+        <!--<div class="row">
+
           <div class="col-lg-6" data-aos="fade-right">
             <h3>Story</h3>
             <p>Founded in 2010 by passionate food enthusiasts, Pancake Bliss began as a humble food truck serving delectable pancakes on the streets of downtown. With an unwavering commitment to quality ingredients and exceptional flavors, Pancake Bliss quickly gained a loyal following and expanded into a full-fledged restaurant, becoming a beloved culinary destination for locals and visitors alike.</p>
           </div>
+
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
             <h3>Our Vision</h3>
             <p>At Pancake Bliss, our vision is simple: to spread joy, one pancake at a time. We envision a world where every bite of our fluffy, indulgent pancakes brings a smile to our customers' faces. With a focus on creativity, innovation, and community, we strive to delight taste buds, foster connections, and create unforgettable dining experiences for pancake lovers of all ages.</p>
           </div>
-      </div>
+      </div> -->
+
     </div>
 
     <div class="section-header">
@@ -1124,6 +1183,35 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+
+
+
+  <script>var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+    
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }</script>
+
+
+
+
+
+
 
 </body>
 
